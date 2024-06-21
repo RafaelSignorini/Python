@@ -104,3 +104,10 @@ arrombado''')
 # também serve de comentário fora da função print()
 
 # Importante: letras maiúsculas e minúsculas não são a mesma coisa em texto
+
+# Exemplos:
+frase = frase.replace('Python', 'Android')
+print(frase)
+print('Curso' in frase)
+print(frase.find('Curso'))
+print(frase.lower().find('vídeo'))
