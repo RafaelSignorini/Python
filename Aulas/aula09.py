@@ -86,9 +86,21 @@ frase = 'Curso em Vídeo Python'
 # Prática:
 
 print(frase)
-print(frase[3])
-print(frase[3:13])
-print(frase[:13])
-print(frase[13:])
-print(frase[1:15])
-print(frase[1:15:2])
+print(frase[3])             # s
+print(frase[3:13])          # so em Víde
+print(frase[:13])           # Curso em Víde
+print(frase[13:])           # o Python
+print(frase[1:15])          # urso em Vídeo
+print(frase[1:15:2])        # us mVdo
+print(frase[1::2])          # us mVdoPto
+print(frase[::2])           # Croe íe yhn
+
+# texto de múltiplas linhas:
+
+print('''bom dia fdp
+como vai
+arrombado''')
+
+# também serve de comentário fora da função print()
+
+# Importante: letras maiúsculas e minúsculas não são a mesma coisa em texto
