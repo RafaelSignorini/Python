@@ -111,3 +111,8 @@ print(frase)
 print('Curso' in frase)
 print(frase.find('Curso'))
 print(frase.lower().find('vídeo'))
+
+# divisão de strings
+frase = 'Curso em Vídeo Python'
+dividido = frase.split()
+print(dividido[2][3])
