@@ -1,13 +1,11 @@
-idade = int(input('Insira a sua idade: \n'))
-if idade > 0 and idade <= 9:
-    print('Você estará na categoria Mirim.')
-elif idade > 9 and idade <= 14:
-    print('Você estará na categoria Infantil.')
-elif idade > 14 and idade <= 19:
-    print('Você estará na categoria Junior.')
-elif idade > 19 and idade <= 24:
-    print('Você estará na categoria Senior.')
-elif idade > 24:
-    print('Você estará na categoria Mestre.')
+nota1 = float(input('Insira sua primeira nota: '))
+nota2 = float(input('Insira sua segunda nota: '))
+media = (nota1 + nota2) / 2
+if media < 5:
+    print('Você está reprovado com a média de {:.1f} pontos.'.format(media))
+elif media >= 5 and media < 7:
+    print('Você está de recuperação com a média de {:.1f} pontos.'.format(media))
+elif media >= 7:
+    print('Você está aprovado com a média de {:.1f} pontos.'.format(media))
 else:
-    print('Algo de errado não está certo, tente novamente;')
+    print('Erro, tente novamente.')
