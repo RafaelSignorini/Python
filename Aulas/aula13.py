@@ -71,5 +71,3 @@ for s in range(0, 3):
     soma += d
 print('A soma dos valores é {}.'.format(soma))
 print('FIM')
-
-
