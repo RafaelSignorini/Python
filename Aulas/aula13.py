@@ -29,7 +29,7 @@
 # código de repetição com 3 ações e condição interna:
 
 # for c in range(1, 10):
-#   if {condição} == True:          a primeira ação do laço de repetição é
+#   if {condição.parâmetros} == True:          a primeira ação do laço de repetição é
 #       acao3                       verificada por uma condição, dessa forma
 #   acao                            o código executa caso for verdadeira,
 #   acao2                           se não segue com o reso do código
