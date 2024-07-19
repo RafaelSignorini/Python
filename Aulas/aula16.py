@@ -1,6 +1,6 @@
 # Tuplas
 
-# lanche = ('hamburguer', 'suco', 'pizza', 'pudim')             declarando os itens da tupla, sendo ela uma 
+# lanche = ('hamburguer', 'suco', 'pizza', 'pudim')     declarando os itens da tupla, sendo ela uma 
 #                                                       variável composta imutável, seus elementos 
 #                                                       serão permanentemente os mesmos
 
