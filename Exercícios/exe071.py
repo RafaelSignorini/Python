@@ -30,5 +30,4 @@ while True:
             um += 1
     print(f'Um total de {um} cédulas de 1 reais foram sacadas. ')
     break
-
 print('Você terminou o programa. ')
