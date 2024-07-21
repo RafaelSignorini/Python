@@ -1,7 +1,9 @@
-num = (int(input('Insira o primeiro número: ')), 
-       int(input('Insira o segundo número: ')), 
-       int(input('Insira o terceiro número: ')), 
-       int(input('Insira o quarto número: ')))
+num = (
+    int(input('Insira o primeiro número: ')), 
+    int(input('Insira o segundo número: ')), 
+    int(input('Insira o terceiro número: ')), 
+    int(input('Insira o quarto número: '))
+)
 print(f'Os números {num} foram registrados em uma tupla. ')
 print(f'O primeiro número aparece {num.count(num[0])} vezes, ')
 if 3 in num:
