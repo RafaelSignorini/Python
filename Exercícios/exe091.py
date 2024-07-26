@@ -1,37 +1,19 @@
 from random import randint
-jogadores = {}
-jogadores['jogador1'] = randint(1, 10)
-primeiro = jogadores['jogador1']
-jogadores['jogador2'] = randint(1, 10)
-if jogadores['jogador2'] > primeiro:
-    primeiro = jogadores['jogador2']
-    segundo = jogadores['jogador1']
-else:
-    segundo = jogadores['jogador2']
-jogadores['jogador3'] = randint(1, 10)
-if jogadores['jogador3'] > primeiro:
-    terceiro = segundo
-    segundo = primeiro
-    primeiro = jogadores['jogador3']
-elif jogadores['jogador3'] > segundo:
-    terceiro = segundo
-    segundo = jogadores['jogador3']
-else:
-    terceiro = jogadores['jogador3']
-jogadores['jogador4'] = randint(1, 10)
-if jogadores['jogador4'] > primeiro:
-    quarto = terceiro
-    terceiro = segundo
-    segundo = primeiro
-    primeiro = jogadores['jogador4']
-elif jogadores['jogador4'] > segundo:
-    quarto = terceiro
-    terceiro = segundo
-    segundo = jogadores['jogador4']
-elif jogadores['jogador4'] > terceiro:
-    quarto = terceiro
-    terceiro = jogadores['jogador4']
-else:
-    quarto = jogadores['jogador4']
-for j in jogadores.items():
-    print(f'O {jogadores[j]} tirou {jogadores[j]}')
+from time import sleep
+from operator import itemgetter
+jogo = {
+    'jogador1': randint(1, 6), 
+    'jogador2': randint(1, 6), 
+    'jogador3': randint(1, 6), 
+    'jogador4': randint(1, 6)
+}
+rank = []
+print('Valores sorteados: ')
+for k, v in jogo.items():
+    sleep(1)
+    print(f'{k} tirou {v} no dado. ')
+rank = sorted(jogo.items(), key = itemgetter(1), reverse = True)
+print('-=-' * 20)
+for i, v in enumerate(rank):
+    sleep(1)
+    print(f'{i + 1}º lugar: {v[0]} com {v[1]}.')
