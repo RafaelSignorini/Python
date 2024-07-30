@@ -1,4 +1,3 @@
-from time import sleep
 jogador = {}
 partidas = []
 jogador['nome'] = str(input('Nome do Jogador: ')).strip().capitalize()
@@ -13,3 +12,7 @@ print('-=-' * 10)
 for k, v in jogador.items():
     print(f'{k} = {v}')
 print('-=-' * 10)
+print(f'O jogador {jogador["nome"]} jogou {len(jogador["gols de cada partida"])} partidas.')
+for i, v in enumerate(partidas):
+    print(f'Na {i}ª partida fez {v} gols.')
+print(f'Foi um total de {jogador["total de gols"]} gols em todas as partidas.')
