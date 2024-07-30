@@ -1,6 +1,6 @@
 from datetime import datetime
 dados = {}
-dados['nome'] = str(input('Nome: ')).capitalize().strip()
+dados['nome'] = str(input('Nome: ')).strip().capitalize()
 nasc = int(input('Ano de nascimento: '))
 dados['idade'] = datetime.now().year - nasc
 dados['ctps'] = int(input('Carteira de Trabalho (0 caso não tenha): '))
