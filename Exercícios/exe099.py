@@ -1,5 +1,4 @@
 from random import randint
-from time import sleep
 def func():
     maior = 0
     quant = randint(1, 6)
